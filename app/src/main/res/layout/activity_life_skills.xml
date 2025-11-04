@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Root ScrollView allows content to scroll if it exceeds screen height -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:ignore="HardcodedText"
+    tools:context=".LifeSkills">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 1. Course Image Header -->
+        <ImageView
+            android:id="@+id/course_image_header"
+            android:layout_width="0dp"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/_life_skills"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <!-- Back Button - CORRECTED: Background and icon source fixed for visibility and correctness -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circular_backround"
+            android:src="@drawable/ic_arrow_back_"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white"
+            android:contentDescription="Back" />
+
+        <!-- 2. Main Course Title -->
+        <TextView
+            android:id="@+id/course_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/baloo"
+            android:text="Life Skills Certification"
+            android:textColor="#282828"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/course_image_header" />
+
+        <!-- 3. Key Details Section (Duration, Level, Price) -->
+        <LinearLayout
+            android:id="@+id/key_details_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="@id/course_title"
+            app:layout_constraintStart_toStartOf="@id/course_title"
+            app:layout_constraintTop_toBottomOf="@id/course_title">
+
+            <!-- Duration -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Duration"
+                    android:src="@drawable/ic_time"
+                    app:tint="#589B92" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/blinker_semibold"
+                    android:text="6 months"
+                    android:textColor="#555555" />
+            </LinearLayout>
+
+            <!-- Skill Level -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Skill Level"
+                    android:src="@drawable/ic_skill_level"
+                    app:tint="#589B92" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/blinker_semibold"
+                    android:text="Intermediate"
+                    android:textColor="#555555" />
+            </LinearLayout>
+
+            <!-- Price -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Price"
+                    android:src="@drawable/ic_price"
+                    app:tint="#589B92" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/blinker_semibold"
+                    android:text="R1 500"
+                    android:textColor="#555555" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 4. Separator Line -->
+        <View
+            android:id="@+id/separator1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="#E0E0E0"
+            app:layout_constraintEnd_toEndOf="@id/course_title"
+            app:layout_constraintStart_toStartOf="@id/course_title"
+            app:layout_constraintTop_toBottomOf="@id/key_details_layout" />
+
+        <!-- 5. "About This Course" Section -->
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/baloo"
+            android:text="About This Course"
+            android:textColor="#282828"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/course_title"
+            app:layout_constraintTop_toBottomOf="@id/separator1" />
+
+        <TextView
+            android:id="@+id/about_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/blinker_semibold"
+            android:lineSpacingMultiplier="1.2"
+            android:text="This essential course equips you with the core practical skills needed for personal and professional success. You will learn about financial literacy, effective communication, time management, and problem-solving. This certification empowers you to navigate daily challenges with confidence and build a foundation for a stable and independent future."
+            android:textColor="#555555"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/course_title"
+            app:layout_constraintStart_toStartOf="@id/course_title"
+            app:layout_constraintTop_toBottomOf="@id/about_title" />
+
+        <!-- 6. "What You Will Learn" Section -->
+        <TextView
+            android:id="@+id/learn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/baloo"
+            android:text="What You Will Learn"
+            android:textColor="#282828"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/course_title"
+            app:layout_constraintTop_toBottomOf="@id/about_description" />
+
+        <!-- Learning Points - CORRECTED: Text is now set properly for each item -->
+        <LinearLayout
+            android:id="@+id/learning_points_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@id/course_title"
+            app:layout_constraintStart_toStartOf="@id/course_title"
+            app:layout_constraintTop_toBottomOf="@id/learn_title">
+
+            <!-- Learning Point 1 -->
+            <include
+                android:id="@+id/learning_point_1"
+                layout="@layout/learning_point_item"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                style="@style/LearningPointText"
+                android:text="Develop effective communication and interpersonal skills." />
+            <!-- Learning Point 2 -->
+            <include
+                android:id="@+id/learning_point_2"
+                layout="@layout/learning_point_item"
+                app:layout_constraintTop_toBottomOf="@id/learning_point_1"
+                app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                style="@style/LearningPointText"
+                android:text="Create and manage a personal budget for financial stability." />
+
+            <!-- Learning Point 3 -->
+            <include
+                android:id="@+id/learning_point_3"
+                layout="@layout/learning_point_item"
+                app:layout_constraintTop_toBottomOf="@id/learning_point_2"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                style="@style/LearningPointText"
+                android:text="Learn proven time management and organizational techniques." />
+            <!-- Learning Point 4 -->
+            <include
+                android:id="@+id/learning_point_4"
+                layout="@layout/learning_point_item"
+                app:layout_constraintTop_toBottomOf="@id/learning_point_3"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                style="@style/LearningPointText"
+                android:text="Build critical thinking and problem-solving abilities." />
+        </LinearLayout>
+
+
+
+        <!-- 7. Call-to-Action Button - CORRECTED: Color changed to match app branding -->
+        <Button
+            android:id="@+id/add_to_cart_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#D36112"
+            android:fontFamily="@font/baloo"
+            android:text="Add to Cart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cornerRadius="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/course_title"
+            app:layout_constraintStart_toStartOf="@id/course_title"
+            app:layout_constraintTop_toBottomOf="@id/learning_points_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

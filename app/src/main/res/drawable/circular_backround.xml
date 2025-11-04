@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file defines a shape that can be used as a background -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"> <!-- 'oval' makes the shape a circle or ellipse -->
+
+    <!-- This sets the fill color of the shape -->
+    <!-- #80000000 is a semi-transparent black.
+         The first two digits (80) control the transparency (Alpha). -->
+    <solid android:color="#80000000" />
+
+</shape>

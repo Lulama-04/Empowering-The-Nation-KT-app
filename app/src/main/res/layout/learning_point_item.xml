@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingVertical="6dp">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/outline_check_box_24"
+        app:tint="#589B92"
+        android:contentDescription="Learning point"/>
+
+    <TextView
+        android:id="@+id/learning_point_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/blinker_semibold"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        tools:text="This is a sample learning point"
+        xmlns:tools="http://schemas.android.com/tools" />
+
+</LinearLayout>
+
+
+
+

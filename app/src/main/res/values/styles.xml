@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="Widget.Theme.WILSummativeProjectApp.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+
+    </style>
+
+    <!-- Style for the text in our learning points -->
+    <style name="LearningPointText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">32dp</item> <!-- Aligns with the text in the included layout -->
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:fontFamily">@font/blinker_semibold</item>
+        <item name="android:textColor">#555555</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WILSummativeProjectApp">
+        <activity
+            android:name=".FirstAid"
+            android:exported="false" />
+        <activity
+            android:name=".Sewing"
+            android:exported="false" />
+        <activity
+            android:name=".Landscaping"
+            android:exported="false" />
+        <activity
+            android:name=".LifeSkills"
+            android:exported="false" />
+        <activity
+            android:name=".GardenMaintenance"
+            android:exported="false" />
+        <activity
+            android:name=".ChildMinding"
+            android:exported="false" />
+        <activity
+            android:name=".ChildMinding"
+            android:exported="false" />
+        <activity
+            android:name=".activity_child_minding.xml"
+            android:exported="false" />
+        <activity
+            android:name=".MainViewCartActivity"
+            android:exported="false" />
+        <activity
+            android:name="._AboutPage"
+            android:exported="false" />
+        <activity
+            android:name="._Cart"
+            android:exported="false" />
+        <activity
+            android:name="._ContactPage"
+            android:exported="false" />
+        <activity
+            android:name="._HomePage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="._CoursePage"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
