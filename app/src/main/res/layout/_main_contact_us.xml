@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="._ContactPage"
+    tools:context=".Contact"
     tools:ignore="HardcodedText">
 
     <!-- 2. FIRST CHILD: The drawer that slides out.-->
@@ -113,12 +113,14 @@
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
                         tools:ignore="UseCompoundDrawables">
+
                         <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:contentDescription="Email"
                             android:src="@drawable/ic_email"
                             app:tint="#D36112" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -137,12 +139,14 @@
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
                         tools:ignore="UseCompoundDrawables">
+
                         <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:contentDescription="Phone"
                             android:src="@drawable/ic_phone"
                             app:tint="#D36112" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -161,12 +165,14 @@
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
                         tools:ignore="UseCompoundDrawables">
+
                         <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:contentDescription="Address"
                             android:src="@drawable/ic_location"
                             app:tint="#D36112" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -185,12 +191,14 @@
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
                         tools:ignore="UseCompoundDrawables">
+
                         <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:contentDescription="Mail"
                             android:src="@drawable/ic_mail"
                             app:tint="#D36112" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -201,40 +209,23 @@
                             android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
-
-            <!-- Map Section -->
-            <TextView
-                android:id="@+id/map_header"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:fontFamily="@font/baloo"
-                android:text="Our Location"
-                android:textColor="#282828"
-                android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="@id/contact_details_card"
-                app:layout_constraintTop_toBottomOf="@id/contact_details_card" />
-
             <androidx.cardview.widget.CardView
-                android:id="@+id/map_card"
-                android:layout_width="0dp"
-                android:layout_height="200dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="32dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="4dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/contact_details_card"
-                app:layout_constraintStart_toStartOf="@id/contact_details_card"
-                app:layout_constraintTop_toBottomOf="@id/map_header">
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:padding="10dp"
+                app:cardCornerRadius="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contact_details_card">
 
-                <!-- IMPORTANT: Add a FragmentContainerView for the Google Map -->
-                <androidx.fragment.app.FragmentContainerView
-                    android:id="@+id/map_fragment"
-                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/location" />
             </androidx.cardview.widget.CardView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context="._CoursePage"
+    tools:context=".Home"
     android:fitsSystemWindows="true">
 
     <com.google.android.material.navigation.NavigationView
@@ -220,6 +220,7 @@
                                 android:textSize="14sp" />
 
                             <Button
+                                android:id="@+id/btnFirstAid"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="8dp"
@@ -264,11 +265,12 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginHorizontal="16dp"
                                 android:fontFamily="@font/blinker_semibold"
-                                android:text="Eight Weeks Course"
+                                android:text="Six Months Course"
                                 android:textColor="#777777"
                                 android:textSize="14sp" />
 
                             <Button
+                                android:id="@+id/btnLandscaping"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="8dp"
@@ -318,6 +320,7 @@
                                 android:textSize="14sp" />
 
                             <Button
+                                android:id="@+id/btnGardening"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="8dp"
@@ -367,6 +370,7 @@
                                 android:textSize="14sp" />
 
                             <Button
+                                android:id="@+id/btnCooking"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="8dp"

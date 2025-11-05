@@ -27,7 +27,7 @@
 
         <!-- Back Button - CORRECTED: Background and icon source fixed for visibility and correctness -->
         <ImageButton
-            android:id="@+id/back_button"
+            android:id="@+id/backBtn"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginStart="16dp"
@@ -214,7 +214,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
             <TextView
                 style="@style/LearningPointText"
-                android:text="Master essential knife skills for safety and efficiency" />
+                android:text="Child development stages and milestones" />
 
             <!-- Learning Point 2 -->
             <include
@@ -224,7 +224,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
             <TextView
                 style="@style/LearningPointText"
-                android:text="Learn fundamental cooking methods: sautéing, roasting, and boiling" />
+                android:text="Health, safety, and nutrition for children" />
 
 
             <!-- Learning Point 3 -->
@@ -235,7 +235,7 @@
                 app:layout_constraintStart_toStartOf="parent"/>
             <TextView
                 style="@style/LearningPointText"
-                android:text="Understand how to follow a recipe and measure ingredients accurately" />
+                android:text="Creating a safe and stimulating environment" />
 
             <!-- Learning Point 4 -->
             <include
@@ -245,7 +245,7 @@
                 app:layout_constraintStart_toStartOf="parent"/>
             <TextView
                 style="@style/LearningPointText"
-                android:text="Prepare a complete meal from scratch" />
+                android:text="Behavior management and positive discipline" />
 
         </LinearLayout>
 

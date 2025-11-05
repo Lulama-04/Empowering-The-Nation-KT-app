@@ -11,44 +11,44 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WILSummativeProjectApp">
+        <!--Courses Avtivities-->
         <activity
             android:name=".FirstAid"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Course" />
         <activity
             android:name=".Sewing"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Course"/>
         <activity
             android:name=".Landscaping"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Course"/>
         <activity
             android:name=".LifeSkills"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Course"/>
         <activity
             android:name=".GardenMaintenance"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Course"/>
         <activity
             android:name=".ChildMinding"
+            android:exported="false"
+            android:parentActivityName=".Course"/>
+        <activity
+            android:name=".CookingCourse"
+            android:exported="false"
+            android:parentActivityName=".Course"/>
+        <!--Main activities-->
+        <activity
+            android:name=".About"
             android:exported="false" />
         <activity
-            android:name=".ChildMinding"
+            android:name=".Contact"
             android:exported="false" />
         <activity
-            android:name=".activity_child_minding.xml"
-            android:exported="false" />
-        <activity
-            android:name=".MainViewCartActivity"
-            android:exported="false" />
-        <activity
-            android:name="._AboutPage"
-            android:exported="false" />
-        <activity
-            android:name="._Cart"
-            android:exported="false" />
-        <activity
-            android:name="._ContactPage"
-            android:exported="false" />
-        <activity
-            android:name="._HomePage"
+            android:name=".Home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -57,8 +57,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="._CoursePage"
+            android:name=".Course"
             android:exported="false" />
+        <activity
+            android:name=".Cart"
+            android:exported="false"
+            android:parentActivityName=".Course"/>
+
 
         <meta-data
             android:name="preloaded_fonts"
