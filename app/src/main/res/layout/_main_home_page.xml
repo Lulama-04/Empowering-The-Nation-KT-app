@@ -71,7 +71,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/blinker_semibold"
-                    android:text="We Offer courses and training that help get your first entry role in your career."
+                    android:text="We Offer courses and training that help get your first entry role in your career. For a limited time only we are offering discounts on courses."
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/empowering_title"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/empowering_title" />
@@ -117,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/blinker_semibold"
-                    android:text="Strengthen student employability with skills training from the most experienced teachers."
+                    android:text="Strengthen student employability with skills training from the most experienced teachers. Starting From 2 selected courses you can get enrolled at a cheaper rate"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/preparing_title"
                     app:layout_constraintStart_toStartOf="@+id/preparing_title"

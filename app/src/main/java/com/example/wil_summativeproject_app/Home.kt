@@ -11,6 +11,16 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+/*Attributes:
+* Original code link: https://codingwitht.com/create-a-navigation-drawer-material-design-in-android-studio-tutorial
+* creator: CodingwithT
+*changes: I used his navigation.drawer code throughtout layouts
+*
+* Attributes:
+* Original code link: https://www.youtube.com/watch?v=1N25p7HigvE&list=PL0Mb_G0vinrrwAdA0kzBiJ_prHZ6TPQHs
+* creator: Fichy
+*changes: I used his cardview code throughtout layouts with adjustments for the buttons.ect
+*/
 
 class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
